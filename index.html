@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camiseta Store</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            font-family: arial;
+            background-color: pink;
+            text-align: center;
+        }
+        main{
+            width: 500px;
+            margin: 15px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;  
+        }
+        h1{
+            color: palevioletred;
+        }
+        button{
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            background-color: palevioletred;
+            color: white;
+        }
+        input{
+            margin: 15px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 15px;
+            border: 1px solid gray;
+            font-size: 1rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <header><h1>Camiseta Store</h1></header>
+
+        <article>
+            <h2>Compre sua camiseta!</h2>
+            <p>Na nossa loja temos camisetas de todas as cores, pesquisa a camiseta que deseja comprar</p>
+        </article>
+
+        <article>
+            <form>
+                <label>Qual camiseta voce procura?</label>
+                <input type="text" id="produtoProcurado" placeholder="ex: Camiseta Preta" required>
+                <button id="procurarCamisa">Procurar</button>
+                <p id="mensagemForm"></p>
+                <button id="adicionarCarrinho">Adicionar no carrinho</button>
+
+            </form>
+        </article>
+
+        <article>
+            <h2>Carrinho</h2>
+            <p id="itensCarrinho"></p>
+            <p id="saldoCarrinho"></p>
+            <button id="ordenarCarrinho">Ordenar</button>
+            <button id="removerCarrinho">Remover ultimo Produto</button>
+        </article>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
